@@ -33,7 +33,7 @@ body {
 
 /* ################## loader-spinner #######################*/
 
-/* .loader {
+ .loader {
   position: fixed;
   display: grid;
   place-items: center;
@@ -46,15 +46,15 @@ body {
   animation: loader-spinner 0.5s;
   animation-fill-mode: forwards;
   animation-delay: 3s;
-}*/
-/* @keyframes loader-spinner { 
+}
+ @keyframes loader-spinner { 
   0% {
     transform: scale(1);
   }
   100% {
     transform: scale(0);
   }
-} */
+} 
 
 
 
