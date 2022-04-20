@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
@@ -22,166 +22,197 @@
 
     <header>
       <div class="head-bar">
-        <i class="fas fa-arrow-left dispo-icon-arrow"></i>
+        <a class="dispo-arrow" href="index-1.html#retour-accueil" target="_blank">
+          <i class="fas fa-arrow-left dispo-icon-arrow"></i>
+        </a>
         <div class="title-head">ohmyfood</div>
       </div>
 
       <div class="presenting-page">
         <!-- <div class="card-img-restaurant"> -->
-        <img class="card-img-restaurant" src=images\restaurants\louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg
+        <img class="card-img-restaurant" src=./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg
           alt="">
         <!-- </div> -->
         <div class="bloc-title-restaurant grey-back">
           <div class="title-restaurant">Le délice des sens</div>
-          <i class="far fa-heart dispo-icon-heart"></i>
+          <div class="bloc-heart">
+
+            <svg class="empty" width="38px" height="38px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+              enable-background="new 0 0 50 50">
+              <path xmlns="http://www.w3.org/2000/svg"
+                d="M25 39.7l-.6-.5C11.5 28.7 8 25 8 19c0-5 4-9 9-9 4.1 0 6.4 2.3 8 4.1 1.6-1.8 3.9-4.1 8-4.1 5 0 9 4 9 9 0 6-3.5 9.7-16.4 20.2l-.6.5zM17 12c-3.9 0-7 3.1-7 7 0 5.1 3.2 8.5 15 18.1 11.8-9.6 15-13 15-18.1 0-3.9-3.1-7-7-7-3.5 0-5.4 2.1-6.9 3.8L25 17.1l-1.1-1.3C22.4 14.1 20.5 12 17 12z" />
+            </svg>
+
+            <svg class="full" width="38px" height="38px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+              enable-background="new 0 0 50 50">
+              <path xmlns="http://www.w3.org/2000/svg"
+                d="M 25 39.7 l -0.6 -0.5 C 11.5 28.7 8 25 8 19 c 0 -5 4 -9 9 -9 c 4.1 0 6.4 2.3 8 4.1 c 1.6 -1.8 3.9 -4.1 8 -4.1 c 5 0 9 4 9 9 c 0 6 -3.5 9.7 -16.4 20.2 l -0.6 0.5 z z" />
+              <defs>
+                <linearGradient id="MyGradient" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="15%" stop-color="#9356dc" />
+                  <stop offset="100%" stop-color="#ff79da" />
+                </linearGradient>
+              </defs>
+
+              <path fill="url(#MyGradient)" width="100%" height="100%"
+                d="M 25 39.7 l -0.6 -0.5 C 11.5 28.7 8 25 8 19 c 0 -5 4 -9 9 -9 c 4.1 0 6.4 2.3 8 4.1 c 1.6 -1.8 3.9 -4.1 8 -4.1 c 5 0 9 4 9 9 c 0 6 -3.5 9.7 -16.4 20.2 l -0.6 0.5 z z" />
+            </svg>
+          </div>
         </div>
+      </div>
     </header>
 
     <div class="menu-restaurant grey-back">
 
-      <div class="bloc-title-menu">
-        <div class="title-menu">ENTRÉES</div>
-        <div class="green-line"></div>
-      </div>
-
-      <div class="bloc-meal">
-        <div class="text-meal">
-          <h3 class="title-meal">Tartare de thon</h3>
-          <p class="precision">Assaisonné au yuzu </p>
+      <div class="bloc-entrees">
+        <div class="bloc-title-menu">
+          <div class="title-menu">ENTRÉES</div>
+          <div class="green-line"></div>
         </div>
-        <div class="bloc-price">
-          <div class="price-meal">25€</div>
-          <div class="price-meal-after">
-            <i class="fas fa-check valid"></i>
+
+        <div class="bloc-meal delay-100">
+          <div class="text-meal">
+            <h3 class="title-meal">Tartare de thon</h3>
+            <p class="precision">Assaisonné au yuzu </p>
+          </div>
+          <div class="bloc-price">
+            <div class="price-meal">25€</div>
+            <div class="price-meal-after">
+              <i class="fas fa-check valid"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="bloc-meal delay-200">
+          <div class="text-meal">
+            <h3 class="title-meal">Bouchée de homard croustillant </h3>
+            <p class="precision">Et sa farandole de petits légumes</p>
+          </div>
+          <div class="bloc-price">
+            <div class="price-meal">35€</div>
+            <div class="price-meal-after">
+              <i class="fas fa-check valid"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="bloc-meal delay-300">
+          <div class="text-meal">
+            <h3 class="title-meal">Velouté de cèpes </h3>
+            <p class="precision">Aux truffesr</p>
+          </div>
+          <div class="bloc-price">
+            <div class="price-meal">20€</div>
+            <div class="price-meal-after">
+              <i class="fas fa-check valid"></i>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="bloc-meal">
-        <div class="text-meal">
-          <h3 class="title-meal">Bouchée de homard croustillant </h3>
-          <p class="precision">Et sa farandole de petits légumes</p>
+      <div class="bloc-plats">
+        <div class="bloc-title-menu">
+          <div class="title-menu">PLATS</div>
+          <div class="green-line"></div>
         </div>
-        <div class="bloc-price">
-          <div class="price-meal">35€</div>
-          <div class="price-meal-after">
-            <i class="fas fa-check valid"></i>
+
+
+        <div class="bloc-meal delay-100">
+          <div class="text-meal">
+            <h3 class="title-meal">Poulet rôti aux herbes de Provence </h3>
+            <p class="precision">Et sa crème de truffe</p>
+          </div>
+          <div class="bloc-price">
+            <div class="price-meal">40€</div>
+            <div class="price-meal-after">
+              <i class="fas fa-check valid"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="bloc-meal delay-200">
+          <div class="text-meal">
+            <h3 class="title-meal">Langouste rôtie </h3>
+            <p class="precision">Et ses légumes de saison</p>
+          </div>
+          <div class="bloc-price">
+            <div class="price-meal">35€</div>
+            <div class="price-meal-after">
+              <i class="fas fa-check valid"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="bloc-meal delay-300">
+          <div class="text-meal">
+            <h3 class="title-meal">Côte de boeuf Angus </h3>
+            <p class="precision">Et sa purée de panais</p>
+          </div>
+          <div class="bloc-price">
+            <div class="price-meal">40€</div>
+            <div class="price-meal-after">
+              <i class="fas fa-check valid"></i>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="bloc-meal">
-        <div class="text-meal">
-          <h3 class="title-meal">Velouté de cèpes </h3>
-          <p class="precision">Aux truffesr</p>
+      <div class="bloc-desserts">
+        <div class="bloc-title-menu">
+          <div class="title-menu">DESSERTS</div>
+          <div class="green-line"></div>
         </div>
-        <div class="bloc-price">
-          <div class="price-meal">20€</div>
-          <div class="price-meal-after">
-            <i class="fas fa-check valid"></i>
+
+        <div class="bloc-meal delay-100">
+          <div class="text-meal">
+            <h3 class="title-meal">Farandole de desserts</h3>
+            <p class="precision">Du chef</p>
+          </div>
+          <div class="bloc-price">
+            <div class="price-meal">18€</div>
+            <div class="price-meal-after">
+              <i class="fas fa-check valid"></i>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="bloc-title-menu">
-        <div class="title-menu">PLATS</div>
-        <div class="green-line"></div>
-       </div>
-  
-
-      <div class="bloc-meal">
-        <div class="text-meal">
-          <h3 class="title-meal">Poulet rôti aux herbes de Provence </h3>
-          <p class="precision">Et sa crème de truffe</p>
-        </div>
-        <div class="bloc-price">
-          <div class="price-meal">40€</div>
-          <div class="price-meal-after">
-            <i class="fas fa-check valid"></i>
+        <div class="bloc-meal delay-200">
+          <div class="text-meal">
+            <h3 class="title-meal">Crème brulée </h3>
+            <p class="precision">Revisitée</p>
+          </div>
+          <div class="bloc-price">
+            <div class="price-meal">22€</div>
+            <div class="price-meal-after">
+              <i class="fas fa-check valid"></i>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="bloc-meal">
-        <div class="text-meal">
-          <h3 class="title-meal">Langouste rôtie </h3>
-          <p class="precision">Et ses légumes de saison</p>
-        </div>
-        <div class="bloc-price">
-          <div class="price-meal">35€</div>
-          <div class="price-meal-after">
-            <i class="fas fa-check valid"></i>
+        <div class="bloc-meal delay-300">
+          <div class="text-meal">
+            <h3 class="title-meal">Tiramisu </h3>
+            <p class="precision">À la noisette</p>
           </div>
-        </div>
-      </div>
-
-      <div class="bloc-meal">
-        <div class="text-meal">
-          <h3 class="title-meal">Côte de boeuf Angus </h3>
-          <p class="precision">Et sa purée de panais</p>
-        </div>
-        <div class="bloc-price">
-          <div class="price-meal">40€</div>
-          <div class="price-meal-after">
-            <i class="fas fa-check valid"></i>
-          </div>
-        </div>
-      </div>
-
-      <div class="bloc-title-menu">
-        <div class="title-menu">DESSERTS</div>
-        <div class="green-line"></div>
-        </div>
-
-      <div class="bloc-meal">
-        <div class="text-meal">
-          <h3 class="title-meal">Farandole de desserts</h3>
-          <p class="precision">Du chef</p>
-        </div>
-        <div class="bloc-price">
-          <div class="price-meal">18€</div>
-          <div class="price-meal-after">
-            <i class="fas fa-check valid"></i>
-          </div>
-        </div>
-      </div>
-
-      <div class="bloc-meal">
-        <div class="text-meal">
-          <h3 class="title-meal">Crème brulée </h3>
-          <p class="precision">Revisitée</p>
-        </div>
-        <div class="bloc-price">
-          <div class="price-meal">22€</div>
-          <div class="price-meal-after">
-            <i class="fas fa-check valid"></i>
-          </div>
-        </div>
-      </div>
-
-      <div class="bloc-meal">
-        <div class="text-meal">
-          <h3 class="title-meal">Tiramisu </h3>
-          <p class="precision">À la noisette</p>
-        </div>
-        <div class="bloc-price">
-          <div class="price-meal">23€</div>
-          <div class="price-meal-after">
-            <i class="fas fa-check valid"></i>
+          <div class="bloc-price">
+            <div class="price-meal">23€</div>
+            <div class="price-meal-after">
+              <i class="fas fa-check valid"></i>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- -------------------command-clic-------------------- -->
+    <!-- ########################################## command-clic ########################################## -->
 
     <div class="container-command">
-      <div class="button-command">
+      <div class="button-command degraded">
         Commander
       </div>
     </div>
 
-    <!-- ------------------------------------footer----------------------------------------------- -->
+    <!-- ########################################## footer ########################################## -->
     <footer>
 
       <div class="container-footer">
