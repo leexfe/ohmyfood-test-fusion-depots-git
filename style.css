@@ -12,9 +12,9 @@ body {
 
 /* -----------------color------------------- */
 
-.purple {
+ .purple {
   color: #9356dc;
-}
+} 
 .pink {
   color: #ff79da;
 }
@@ -33,29 +33,31 @@ body {
 
 /* ################## loader-spinner #######################*/
 
-
-.loader{
+/* .loader {
   position: fixed;
   display: grid;
   place-items: center;
   color: #9356dc;
   background-color: #ffffff;
   height: 100vh;
-  inset:0;
-  z-index:1;
+  inset: 0;
+  z-index: 1;
   opacity: 0.8;
-   animation: loader-spinner 0.5s;
-  animation-fill-mode: forwards; 
+  animation: loader-spinner 0.5s;
+  animation-fill-mode: forwards;
   animation-delay: 3s;
-}
- @keyframes loader-spinner {
-   0% {
-     transform: scale(1);
-   }
-   100% {
-     transform:scale(0);
-   }
- }
+}*/
+/* @keyframes loader-spinner { 
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+} */
+
+
+
 
 /* ########################################################*/
 
@@ -135,17 +137,17 @@ body {
 }
 .button-explore-restaurants:hover {
   box-shadow: 0px 5px 7px rgb(165, 165, 165);
-  transition: all 400ms ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .degraded {
   background: linear-gradient(#ff79da, #9356dc);
 }
 .degraded:hover {
   background: linear-gradient(#ffa2e5, #a477db);
-  transition: all 400ms ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-/* ---------------------------------------fonctionnement---------------------------------------------------- */
+/* --------------------------------------- fonctionnement ---------------------------------------------------- */
 
 .container-fonction {
   padding-left: 5%;
@@ -167,12 +169,37 @@ body {
 .bloc-bubble-fonction {
   display: flex;
   flex-direction: row;
-  background-color: rgb(211, 211, 211);
+  background-color: rgb(242, 242, 242);
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0px 5px 7px rgb(190, 190, 190);
+  cursor:pointer;
 }
+
+.bloc-bubble-fonction:hover {
+ transition: all 0.5s ease-in-out;
+  background-color: rgb(255, 234, 253);
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 7px rgb(190, 190, 190);
+  cursor:pointer;
+}
+
+.bloc-bubble-fonction:hover .icon-bubble-mob{
+  color:#9356dc;
+ }
+.bloc-bubble-fonction:hover .icon-bubble-point{
+  color:#9356dc;
+ }
+.bloc-bubble-fonction:hover .icon-bubble-line{
+  color:#9356dc;
+ }
+.bloc-bubble-fonction:hover .icon-bubble-store{
+  color:#9356dc;
+ }
+
 
 .circle-number {
   width: 22px;
@@ -203,6 +230,7 @@ body {
   transform: translate(6px, 4px);
 }
 
+
 .icon-bubble-mob {
   padding-left: 10px;
   transform: translate(12px, 2px);
@@ -213,6 +241,7 @@ body {
   justify-content: center;
   transform: translate(6px, 2px);
 }
+
 .icon-bubble-line {
   padding-left: 2px;
   transform: translate(6px, 2px);
@@ -242,7 +271,7 @@ body {
 
 .title-select-restaurant {
   padding-bottom: 20px;
-    padding-left: 2%;
+  padding-left: 2%;
 }
 
 .container-select-restaurant {
@@ -268,32 +297,32 @@ body {
   box-shadow: 0px 5px 7px rgb(190, 190, 190);
 }
 
-.new{
- /* border: 1px solid red; */
- position: relative;
+.new {
+  /* border: 1px solid red; */
+  position: relative;
 }
-.new:before{
-  content:"Nouveau";
+.new:before {
+  content: "Nouveau";
   position: absolute;
-  height:20px;
+  height: 20px;
   width: auto;
-  background-color:#99e2d0;
-  color:#257561;
-  display: grid ;
+  background-color: #99e2d0;
+  color: #257561;
+  display: grid;
   place-items: center;
   padding: 8px 15px;
   border-radius: 2px;
   top: 10px;
-  right:10px;
+  right: 10px;
   font-weight: 500;
-  
-
 }
 
 .img-rest1 {
   height: 300px;
   width: 100%;
-  object-fit: cover;
+   object-fit: cover; 
+  
+  background-position: bottom;
   border-radius: 15px 15px 0 0;
 }
 
@@ -306,49 +335,91 @@ body {
   padding: 15px 15px 15px 15px;
 }
 
+.content-heart {
+  width: 100%;
+  height: 0%;
+  background-color: #9356dc;
+  z-index: 1000;
+  transition: all 200ms ease-in-out;
+}
+.content-heart:hover {
+  height: 100%;
+  bottom: 0;
+}
+
 .bloc-heart {
+  width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  
+}
+
+
+
+.bloc-heart:hover .full {
+  position: absolute;
+  font-size: 22px;
+  /* color: transparent; */
+  /* background-image: linear-gradient(#ff79da, #9356dc); */
+  background-clip: text;
+  /* définit la façon dont l'arrière-plan d'un élément (que ce soit l'image ou la couleur) s'étend sous la boîte de bordure, la boîte de remplissage (padding) ou la boîte de contenu. */
+  -webkit-background-clip: text;
+  /* text : la zone d'arrière-plan s'étend dans le texte. */
+  transition: all 400ms ease-in-out;  
+  opacity: 1;
+  
+}
+
+.bloc-heart:hover .empty {
+  
+  position: absolute;
+  font-size: 22px;
+  /* color: black; */
+  background-clip: text;
+  /* -webkit-background-clip: text; */
+  opacity: 0;
+  transition: all 400ms ease-in-out;  
 }
 
 .empty {
+  
   position: absolute;
-  font-size: 22px;
-  transform: translateX(-52%);
-  color: black;
-
+  font-size: 22px; 
+  /* color: black; */
   background-clip: text;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   opacity: 1;
 }
 
 .full {
+ 
   position: absolute;
   font-size: 22px;
-  transform: translateX(-52%);
-  color: transparent;
-  background-image: linear-gradient(#ff79da, #9356dc);
+  
+  /* color: transparent; */
+  /* background-image: linear-gradient(#ff79da, #9356dc); */
   background-clip: text;
+  /* définit la façon dont l'arrière-plan d'un élément (que ce soit l'image ou la couleur) s'étend sous la boîte de bordure, la boîte de remplissage (padding) ou la boîte de contenu. */
   -webkit-background-clip: text;
-  opacity: 0;
+  /* text : la zone d'arrière-plan s'étend dans le texte. */
+  opacity:0;
 }
 
-.card-details:hover .full {
-  opacity: 1;
-  transition: all 200ms ease-in-out;
-  transform: translateX(-50%) scale(1.2);
+
+
+.card-details:hover .content-heart {
+  height: 100%;
+  bottom: 0;
 }
 
-.text-restaurants {
-}
 
 /* ----------------------------footer---------------- */
 .container-footer {
   background-color: #363636;
   color: white;
-  padding-left: 5%;
+  padding-left:20px;
   padding-top: 20px;
   padding-bottom: 25px;
 }
@@ -381,6 +452,17 @@ body {
 }
 
 @media (max-width: 768px) {
+
+
+  .container-select-restaurant {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .img-rest1{
+  height: 225px;
+}
+  
   .fonction-grid-tab-desk {
     display: block;
   }
@@ -394,6 +476,10 @@ body {
   }
 
   .title-select-restaurant {
-      padding-left: 0%;
+    padding-left: 0%;
+  }
+
+  .container-footer {
+    padding-left: 3%;
   }
 }
