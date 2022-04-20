@@ -14,7 +14,7 @@
   color: #ff79da;
 }
 
-.blue-grey {
+.blue-green {
   color: #99e2d0;
 }
 .grey {
@@ -43,12 +43,10 @@
   0% {
     transform: translateY(50%);
     opacity: 0;
-    /* transform: scale(0); */
   }
   100% {
     transform: translateY(0);
     opacity: 1;
-    /* transform: scale(1); */
   }
 }
 
@@ -64,18 +62,59 @@
 .delay-300 {
   animation-delay: 300ms;
 }
+.delay-400 {
+  animation-delay: 400ms;
+}
 /* ############################################################# */
+
+.bloc-heart {
+  padding-right: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.bloc-heart:hover .full {
+  position: absolute;
+  font-size: 22px;
+  transition: all 400ms ease-in-out;
+  opacity: 1;
+}
+
+.bloc-heart:hover .empty {
+  position: absolute;
+  font-size: 22px;
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+}
+
+.empty {
+  position: absolute;
+  font-size: 22px;
+  background-clip: text;
+  opacity: 1;
+}
+
+.full {
+  position: absolute;
+  font-size: 22px;
+  opacity: 0;
+}
 
 .bloc-entrees {
   display: flex;
   flex-direction: column;
   width: 33%;
 }
+
 .bloc-plats {
   display: flex;
   flex-direction: column;
   width: 33%;
 }
+
 .bloc-desserts {
   display: flex;
   flex-direction: column;
@@ -87,6 +126,7 @@
   flex-direction: column;
   flex-wrap: wrap;
 }
+
 .head-bar {
   display: flex;
   flex-direction: row;
@@ -95,8 +135,10 @@
   width: 100%;
 }
 
-.dispo-icon-arrow {
-  padding-left: 5%;
+.dispo-arrow {
+  color: black;
+  text-decoration: none;
+  padding-left: 3%;
 }
 
 .title-head {
@@ -216,6 +258,7 @@
   padding-top: 33px;
   padding-right: 20px;
 }
+
 .price-meal-after {
   display: grid;
   place-items: center;
@@ -225,6 +268,7 @@
   border-radius: 0 15px 15px 0;
   transition: all 0.5s;
 }
+
 .valid {
   display: grid;
   place-items: center;
@@ -250,6 +294,7 @@
   background-color: #f2f2f2;
   padding-bottom: 60px;
 }
+
 .button-command {
   color: white;
   text-align: center;
@@ -260,24 +305,28 @@
 }
 
 .button-command:hover {
-  box-shadow:0px 5px 7px rgb(165, 165, 165);
+  box-shadow: 0px 5px 7px rgb(165, 165, 165);
+  transition: all 0.5s ease-in-out;
 }
 
 .degraded {
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
 }
-.degraded:hover{
-  background:linear-gradient(#ffa2e5, #a477db) ;
+
+.degraded:hover {
+  background: linear-gradient(#ffa2e5, #a477db);
+  transition: all 0.5s ease-in-out;
 }
 
 /* --------------------footer----------------- */
 .container-footer {
   background-color: #363636;
   color: white;
-  padding-left: 5%;
+  padding-left: 2%;
   padding-top: 20px;
   padding-bottom: 25px;
 }
+
 .title-footer {
   font-family: Shrikhand, Arial, sans-serif;
   padding-bottom: 20px;
@@ -293,6 +342,7 @@
 .text-foot1 {
   padding-left: 23px;
 }
+
 .text-foot2 {
   padding-left: 16px;
 }
@@ -307,7 +357,14 @@
 }
 
 @media (max-width: 768px) {
- 
+  .container-footer {
+    background-color: #363636;
+    color: white;
+    padding-left: 5%;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
   .menu-restaurant {
     display: flex;
     flex-direction: column;
@@ -316,16 +373,19 @@
     padding-right: 5%;
     padding-bottom: 10px;
   }
+
   .bloc-entrees {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
+
   .bloc-plats {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
+
   .bloc-desserts {
     display: flex;
     flex-direction: column;
