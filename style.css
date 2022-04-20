@@ -295,12 +295,12 @@ body {
   margin-bottom: 10%;
   border-radius: 15px;
   box-shadow: 0px 5px 7px rgb(190, 190, 190);
-}
 
+/* ----------------------------- étiquette nouveau ------------------------------------------- */
 .new {
-  /* border: 1px solid red; */
   position: relative;
 }
+
 .new:before {
   content: "Nouveau";
   position: absolute;
@@ -316,13 +316,12 @@ body {
   right: 10px;
   font-weight: 500;
 }
+/* ----------------------------- étiquette nouveau fin------------------------------------------- */
 
 .img-rest1 {
   height: 300px;
   width: 100%;
-   object-fit: cover; 
-  
-  background-position: bottom;
+  object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 
@@ -335,17 +334,11 @@ body {
   padding: 15px 15px 15px 15px;
 }
 
-.content-heart {
-  width: 100%;
-  height: 0%;
-  background-color: #9356dc;
-  z-index: 1000;
-  transition: all 200ms ease-in-out;
-}
-.content-heart:hover {
-  height: 100%;
-  bottom: 0;
-}
+
+/* --------------------------------- animation remplissage coeur ---------------------------------- */
+
+
+
 
 .bloc-heart {
   width: 40px;
@@ -353,66 +346,36 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  
 }
-
-
 
 .bloc-heart:hover .full {
   position: absolute;
   font-size: 22px;
-  /* color: transparent; */
-  /* background-image: linear-gradient(#ff79da, #9356dc); */
-  background-clip: text;
-  /* définit la façon dont l'arrière-plan d'un élément (que ce soit l'image ou la couleur) s'étend sous la boîte de bordure, la boîte de remplissage (padding) ou la boîte de contenu. */
-  -webkit-background-clip: text;
-  /* text : la zone d'arrière-plan s'étend dans le texte. */
   transition: all 400ms ease-in-out;  
   opacity: 1;
-  
 }
 
 .bloc-heart:hover .empty {
-  
   position: absolute;
   font-size: 22px;
-  /* color: black; */
-  background-clip: text;
-  /* -webkit-background-clip: text; */
+  position: absolute;
+  font-size: 22px;
   opacity: 0;
   transition: all 400ms ease-in-out;  
 }
 
 .empty {
-  
   position: absolute;
   font-size: 22px; 
-  /* color: black; */
-  background-clip: text;
-  /* -webkit-background-clip: text; */
   opacity: 1;
 }
 
 .full {
- 
   position: absolute;
-  font-size: 22px;
-  
-  /* color: transparent; */
-  /* background-image: linear-gradient(#ff79da, #9356dc); */
-  background-clip: text;
-  /* définit la façon dont l'arrière-plan d'un élément (que ce soit l'image ou la couleur) s'étend sous la boîte de bordure, la boîte de remplissage (padding) ou la boîte de contenu. */
-  -webkit-background-clip: text;
-  /* text : la zone d'arrière-plan s'étend dans le texte. */
   opacity:0;
 }
 
-
-
-.card-details:hover .content-heart {
-  height: 100%;
-  bottom: 0;
-}
+/* --------------------------------- animation remplissage coeur fin ---------------------------------- */
 
 
 /* ----------------------------footer---------------- */
@@ -423,6 +386,7 @@ body {
   padding-top: 20px;
   padding-bottom: 25px;
 }
+  
 .title-footer {
   font-family: Shrikhand, Arial, sans-serif;
   padding-bottom: 20px;
