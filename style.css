@@ -295,7 +295,7 @@ body {
   margin-bottom: 10%;
   border-radius: 15px;
   box-shadow: 0px 5px 7px rgb(190, 190, 190);
-}
+
 /* ----------------------------- étiquette nouveau ------------------------------------------- */
 .new {
   position: relative;
@@ -321,8 +321,7 @@ body {
 .img-rest1 {
   height: 300px;
   width: 100%;
-  object-fit: cover; 
-  background-position: bottom;
+  object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 
@@ -335,7 +334,12 @@ body {
   padding: 15px 15px 15px 15px;
 }
 
+
 /* --------------------------------- animation remplissage coeur ---------------------------------- */
+
+
+
+
 .bloc-heart {
   width: 40px;
   display: flex;
@@ -349,13 +353,13 @@ body {
   font-size: 22px;
   transition: all 400ms ease-in-out;  
   opacity: 1;
-  
 }
 
 .bloc-heart:hover .empty {
   position: absolute;
   font-size: 22px;
-  background-clip: text;
+  position: absolute;
+  font-size: 22px;
   opacity: 0;
   transition: all 400ms ease-in-out;  
 }
@@ -363,7 +367,6 @@ body {
 .empty {
   position: absolute;
   font-size: 22px; 
-  background-clip: text;
   opacity: 1;
 }
 
@@ -374,6 +377,7 @@ body {
 
 /* --------------------------------- animation remplissage coeur fin ---------------------------------- */
 
+
 /* ----------------------------footer---------------- */
 .container-footer {
   background-color: #363636;
@@ -382,6 +386,7 @@ body {
   padding-top: 20px;
   padding-bottom: 25px;
 }
+  
 .title-footer {
   font-family: Shrikhand, Arial, sans-serif;
   padding-bottom: 20px;
